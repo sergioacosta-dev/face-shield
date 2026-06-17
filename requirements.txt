@@ -1,0 +1,27 @@
+# Face Shield dependencies
+#
+# SETUP (run these in order):
+#
+#   python -m venv .venv
+#   source .venv/bin/activate        # Linux/macOS
+#   .venv\Scripts\activate           # Windows
+#
+#   pip install --upgrade pip setuptools wheel
+#   pip install Pillow numpy customtkinter tqdm requests
+#   pip install torch torchvision
+#   pip install facenet-pytorch --no-deps
+#
+# NOTE: torch/torchvision above installs the CUDA version automatically.
+# For CPU-only (smaller download), replace the torch line with:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#
+# On first run, ~90 MB of FaceNet model weights will be downloaded automatically.
+
+torch
+torchvision
+Pillow
+numpy
+customtkinter
+tqdm
+requests
+# facenet-pytorch must be installed with --no-deps (see above)
